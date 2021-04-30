@@ -5,15 +5,18 @@
         <meta name="viewport" content="width=device-width">
         <title>Alura Conf</title>
         <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/base.css">
         <link rel="stylesheet" href="css/header.css">
         <link rel="stylesheet" href="css/about.css">
+        <link rel="stylesheet" href="css/speakers.css">
+        <link rel="stylesheet" href="css/form.css">
     </head>
     <body>
         <header class="header">
             <nav class="main-menu">
                 <ul>
-                    <li class="menu-item"><a href="#">Sobre</a></li>
-                    <li class="menu-item"><a href="#">Palestrantes</a></li>
+                    <li class="menu-item"><a href="#panel-about">Sobre</a></li>
+                    <li class="menu-item"><a href="#panel-speakers">Palestrantes</a></li>
                 </ul>
             </nav>
             <div class="jumbotron">
@@ -23,12 +26,12 @@
                 </section>
 
                 <section class="panel-subscribe">
-                    <a href="#" class="button">Increva-se</a>
+                    <a href="#panel-form" class="button">Increva-se</a>
                 </section>
             </div>
         </header>
 
-        <section class="panel panel-about">
+        <section class="panel panel-about" id="panel-about">
             <div class="container">
                 <h2 class="title">Muito conteúdo: do frontend ao backend</h2>
             <h3 class="subtitle">30 de Maio de 2017 - na Cidade Maravilhosa</h3>
@@ -45,6 +48,95 @@
             </div>
 
         </section>
+
+        <section class="panel panel-speakers" id="panel-speakers">
+            <div class="container">
+            <div class="about-speakers">
+            <h2 class="title">PALESTRANTES</h2>
+            <h3 class="subtitle">Aprenda com palestrantes que são referência no mercado</h3>
+            </div>
+
+            <ul class="speakers">
+                <li class="speaker">
+                    <figure class="speaker-portrait">
+                        <img class="speaker-image" src="img/palestrantes/placeholder.jpeg" alt="">
+                        <figcaption class="speaker-name">Maria1</figcaption>
+                        <p class="speaker-bio"></p>
+                    </figure>
+                    <p class="speaker-speach"></p>
+                </li>
+                <li class="speaker">
+                    <figure class="speaker-portrait">
+                        <img class="speaker-image" src="img/palestrantes/placeholder.jpeg" alt="">
+                        <figcaption class="speaker-name">Maria2</figcaption>
+                        <p class="speaker-bio"></p>
+                    </figure>
+                    <p class="speaker-speach"></p>
+                </li>
+                <li class="speaker">
+                    <figure class="speaker-portrait">
+                        <img class="speaker-image" src="img/palestrantes/placeholder.jpeg" alt="">
+                        <figcaption class="speaker-name">Maria3</figcaption>
+                        <p class="speaker-bio"></p>
+                    </figure>
+                    <p class="speaker-speach"></p>
+                </li>
+                <li class="speaker">
+                    <figure class="speaker-portrait">
+                        <img class="speaker-image" src="img/palestrantes/placeholder.jpeg" alt="">
+                        <figcaption class="speaker-name">Maria4</figcaption>
+                        <p class="speaker-bio"></p>
+                    </figure>
+                    <p class="speaker-speach"></p>
+                </li>
+                <li class="speaker">
+                    <figure class="speaker-portrait">
+                        <img class="speaker-image" src="img/palestrantes/placeholder.jpeg" alt="">
+                        <figcaption class="speaker-name">Maria5</figcaption>
+                        <p class="speaker-bio"></p>
+                    </figure>
+                    <p class="speaker-speach"></p>
+                </li>
+                <li class="speaker">
+                    <figure class="speaker-portrait">
+                        <img class="speaker-image" src="img/palestrantes/placeholder.jpeg" alt="">
+                        <figcaption class="speaker-name">Maria6</figcaption>
+                        <p class="speaker-bio"></p>
+                    </figure>
+                    <p class="speaker-speach"></p>
+                </li>
+                <li class="speaker">
+                    <figure class="speaker-portrait">
+                        <img class="speaker-image" src="img/palestrantes/placeholder.jpeg" alt="">
+                        <figcaption class="speaker-name">Maria7</figcaption>
+                        <p class="speaker-bio"></p>
+                    </figure>
+                    <p class="speaker-speach"></p>
+                </li>
+            </ul>
+        </div>
+        </section>
+
+        <section class="panel-form" id="panel-form">
+            <div class="container">
+                <h2 class="title">Seus dados</h2>
+                <form>
+                    <div class="field">
+                        <label>Nome</label>
+                        <input class="field-input">
+                    </div>
+                    <div class="field">
+                        <label>E-mail</label>
+                        <input class="field-input"> 
+                    </div>
+                    <div class="button-place">
+                        <button class="button">REALIZAR INSCRIÇÃO</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <script src="js/jquery.js"></script>
+    <script src="js/index.js"></script>
 
     </body>
 </html>
